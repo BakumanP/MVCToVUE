@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "dev": "webpack-dev-server  --open --config webpack.config.js"
+    "dev": "webpack-dev-serverpnx   --open --config webpack.config.js"
   },
   "keywords": [],
   "author": "",
@@ -16,5 +16,8 @@
     "typescript": "^3.5.1",
     "webpack": "^4.32.2",
     "webpack-cli": "^3.3.2"
+  },
+  "dependencies": {
+    "vue": "^2.6.10"
   }
 }

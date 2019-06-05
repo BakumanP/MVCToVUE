@@ -3,6 +3,7 @@ const path = require('path');
 module.exports = {
   entry: {
     'World':'./TScripts/Demos/World.ts',
+    'Index':'./TScripts/Vue/index.ts'
   },
   module: {
     rules: [
