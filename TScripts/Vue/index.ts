@@ -6,9 +6,7 @@ new Vue({
     console.info(this);
   },
   data(){
-    return {
-      name: 'is Vue!'
-    }
+  
   },
   methods: {
     
