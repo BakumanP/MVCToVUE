@@ -1,14 +1,19 @@
 import Vue from 'vue'
+console.info(document.getElementById('root'));
 new Vue({
-  el:'#app',
   created(){
-    console.log('我引入了!');
-    console.info(this);
+    console.log('创建成功!');
   },
-  data(){
-  
+  mounted: function () {
+    console.log('挂载成功!')
   },
-  methods: {
-    
+  data:() =>{
+    return {
+      hello:'你好啊这个世界'
+    }
   },
-});
+  render(h:Function) {
+    return h('h1',this.hello);
+  },
+}).$mount('#root');
+
