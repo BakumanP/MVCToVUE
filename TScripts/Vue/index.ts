@@ -16,4 +16,3 @@ new Vue({
     return h('h1',this.hello);
   },
 }).$mount('#root');
-
