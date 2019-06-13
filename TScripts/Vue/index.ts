@@ -1,5 +1,5 @@
 import Vue from 'vue'
-console.info(document.getElementById('root'));
+import App from './app.vue'
 new Vue({
   created(){
     console.log('创建成功!');
@@ -7,12 +7,7 @@ new Vue({
   mounted: function () {
     console.log('挂载成功!')
   },
-  data:() =>{
-    return {
-      hello:'你好啊这个世界'
-    }
-  },
   render(h:Function) {
-    return h('h1',this.hello);
+    return h(App)
   },
 }).$mount('#root');
