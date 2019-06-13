@@ -7,7 +7,6 @@ loaders.ts = loaders.tsx
 
 module.exports = {
   entry: {
-    'World':'./TScripts/Demos/World.ts',
     'Index':'./TScripts/Vue/index.ts'
   },
   module: {
@@ -43,7 +42,6 @@ module.exports = {
     filename: '[name].js'
   },
   plugins: [
-    
     new VueLoaderPlugin()
   ]
 };

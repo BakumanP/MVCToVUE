@@ -7,15 +7,27 @@
   </div>
 </template>
  
+
+
 <script lang="ts">
   import Vue from 'vue'
   import Component from 'vue-class-component'
  
+  type IssueTicket = {
+    Id: number, 
+    
+  }
+
   @Component
   export default class App extends Vue {
-    // 初始化数据
-    msg = 123
- 
+    // 数据
+    
+    /** 信息*/
+    msg: number = 123
+    /** 年限 */
+    year: Date  = new Date
+    /** 名称 */
+    name: string = null
     // 声明周期钩子
     mounted () {
       this.greet()
