@@ -1,13 +1,13 @@
 {
   "compilerOptions": {
-    
     "outDir": "./Scripts",
     "allowJs": true,
     "target": "es5",
+    "jsx": "preserve",
     "module": "es6",
     "noImplicitAny": true,
-    "sourceMap": true,  
-    "experimentalDecorators":true,
+    "sourceMap": true,
+    "experimentalDecorators": true,  
     "lib": [
       "dom",
       "es5",
@@ -17,6 +17,8 @@
     ]
   },
   "include": [
-    "./TScripts/**/*"
+    "./src/TScripts/**/*",
+    "./src/components/*.tsx",
+    "/vue-tsx-support/enable-check.d.ts",
   ]
 }

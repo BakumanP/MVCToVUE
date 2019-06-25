@@ -7,7 +7,7 @@ loaders.ts = loaders.tsx
 
 module.exports = {
   entry: {
-    'Index':'./TScripts/Vue/index.ts'
+    'Index':'./src/TScripts/Vue/index.ts'
   },
   module: {
     rules: [
@@ -18,6 +18,18 @@ module.exports = {
             loader:'ts-loader',
             options: {
               appendTsSuffixTo: [/\.vue$/]
+            }
+          },
+        ],
+        exclude: /node_modules/,
+      },
+      {
+        test: /\.ts?$/,
+        use: [
+          { 
+            loader:'ts-loader',
+            options: {
+              appendTsSuffixTo: [/\.tsx$/]
             }
           },
         ],
